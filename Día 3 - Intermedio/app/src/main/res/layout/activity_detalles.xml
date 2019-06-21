@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalles"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:id="@+id/nombre_detalles"
+                    android:text="Nombre del producto"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#086397"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:id="@+id/imagen_detalles"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:text="$150.00"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#049dd9"
+                    android:id="@+id/precio_detalles"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula ac, nunc malesuada pretium eros praesent porta condimentum sociis molestie at, sem elementum dis metus magnis sollicitudin himenaeos per. Ante donec tincidunt aliquet litora non conubia senectus fringilla habitant at, ornare fusce augue consequat mus mauris nisi dapibus quam, magnis diam cum posuere pretium tempor sem integer ultricies. Penatibus pharetra ad pellentesque imperdiet taciti hendrerit vehicula mattis, torquent facilisis congue ornare suscipit a netus nunc, augue porttitor erat habitasse
+                    dictumst sociis fringilla.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula ac, nunc malesuada pretium eros praesent porta condimentum sociis molestie at, sem elementum dis metus magnis sollicitudin himenaeos per. Ante donec tincidunt aliquet litora non conubia senectus fringilla habitant at, ornare fusce augue consequat mus mauris nisi dapibus quam, magnis diam cum posuere pretium tempor sem integer ultricies. Penatibus pharetra ad pellentesque imperdiet taciti hendrerit vehicula mattis, torquent facilisis congue ornare suscipit a netus nunc, augue porttitor erat habitasse
+                    dictumst sociis fringilla."
+                android:textSize="15sp"
+                android:id="@+id/detalles_detalles"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <Button
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/botnconf2"
+                android:drawableLeft="@drawable/ic_action_carrito_c"
+                android:padding="10dp"
+                android:text="Agregar al carrito"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/boton_carrito"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

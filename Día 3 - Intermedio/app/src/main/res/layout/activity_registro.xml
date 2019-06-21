@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:background="@drawable/transicion1"
+    android:orientation="vertical"
+    android:id="@+id/registro">
+
+    <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content"
+        style= "@style/Widget.AppCompat.ProgressBar.Horizontal"
+                 android:indeterminate="true"
+                 android:id="@+id/progressBar"
+                 android:visibility="gone"
+    />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img_perfil"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Presiona para añadir una foto de perfil"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#537471"
+            android:hint="Nombre de usuario"
+            android:background="@drawable/edittextconf"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:id="@+id/registro_nombre"
+            android:inputType="textPersonName"
+            android:focusedByDefault="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:background="@drawable/edittextconf"
+            android:textColor="#537471"
+            android:textSize="17sp"
+            android:inputType="textEmailAddress"
+            android:hint="Correo"
+            android:textAlignment="center"
+            android:id="@+id/registro_correo"
+            android:focusedByDefault="false"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:textColor="#537471"
+            android:hint="Contraseña"
+            android:textAlignment="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextconf"
+            android:textSize="17sp"
+            android:id="@+id/registro_contra"
+            android:focusedByDefault="false"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Registrarse"
+        android:layout_gravity="center"
+        android:background="@drawable/botonconf"
+        android:textColor=" #bdbbbc"
+        android:id="@+id/registro_registro"
+        />
+
+</LinearLayout>

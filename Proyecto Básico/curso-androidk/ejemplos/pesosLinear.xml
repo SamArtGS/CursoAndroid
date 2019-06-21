@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+            android:background="#564"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/passion_one"
+                android:gravity="center"
+                android:text="@string/registro"
+                android:textColor="#FFF"
+                android:textSize="50sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:weightSum="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_weight="3"
+                    android:src="@drawable/user_bigger"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            <EditText
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:id="@+id/et_nombre"
+                    android:hint="@string/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            <EditText
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:id="@+id/et_apellidos"
+                    android:hint="@string/apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_correo"
+                    android:inputType="textEmailAddress"
+                    android:hint="Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_telefono"
+                    android:inputType="phone"
+                    android:hint="Teléfono"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

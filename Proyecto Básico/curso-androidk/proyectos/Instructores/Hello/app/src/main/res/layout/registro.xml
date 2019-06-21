@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+            android:background="#564"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/passion_one"
+                android:gravity="center"
+                android:text="@string/registro"
+                android:textColor="#FFF"
+                android:textSize="50sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <EditText
+            android:layout_marginTop="@dimen/marginEt"
+            android:layout_weight="1"
+            android:id="@+id/et_telefono"
+            android:inputType="phone"
+            android:hint="Teléfono"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:background="#567"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:background="#567"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:weightSum="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_weight="3"
+                    android:src="@drawable/user_bigger"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            <EditText
+                    android:drawableLeft="@drawable/key"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/et_bg"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:id="@+id/et_nombre"
+                    android:hint="@string/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            <EditText
+                    android:layout_marginTop="@dimen/marginEt"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:id="@+id/et_apellidos"
+                    android:hint="@string/apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <EditText
+                    android:layout_marginTop="@dimen/marginEt"
+                    android:layout_weight="1"
+                    android:id="@+id/et_correo"
+                    android:inputType="textEmailAddress"
+                    android:hint="Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    android:text="Género"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RadioButton
+                        android:id="@+id/rb_masculino"
+                        android:hint="Masculino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <RadioButton
+                        android:id="@+id/rb_femenino"
+                        android:hint="Femenino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <Button
+                    android:background="@drawable/bt_bg"
+                    android:textAllCaps="false"
+                    android:text="Registrarse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

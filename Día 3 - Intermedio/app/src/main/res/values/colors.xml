@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grisClaro">#ededed</color>
+    <color name="rosa_boton">#fb5f85</color>
+    <color name="verde_boton">#6fda94</color>
+    <color name="azul_boton">#6f94fc </color>
+    <color name="naranja_boton">#fc8c73</color>
+</resources>
